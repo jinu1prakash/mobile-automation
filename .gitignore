@@ -1,3 +1,5 @@
 /.gradle/
 /.idea/
 /build/
+/out/production/resources/apk-path/ApiDemos-debug.apk
+/out/production/resources/apk-path/Apk-Info.apk
