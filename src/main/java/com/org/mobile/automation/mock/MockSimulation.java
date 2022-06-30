@@ -1,3 +1,4 @@
+/*
 package com.org.mobile.automation.mock;
 
 
@@ -12,8 +13,9 @@ public class MockSimulation {
     public static void main(String[] args) throws MalformedURLException {
         AppiumDriver driver = DriverInitialiser.getAndroidDriver();
         WaitService waitService = new WaitService(driver);
-        waitService.visibilityOfElementToTap();
+//        waitService.visibilityOfElementToTap();
 
+*/
 /*        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel 5");
@@ -26,13 +28,17 @@ public class MockSimulation {
         desiredCapabilities.setCapability("appActivity",".ApiDemos");
         URL url = new URL("http://0.0.0.0:4723/wd/hub");
 
-        AppiumDriver driver = new AndroidDriver(url,desiredCapabilities);*/
+        AppiumDriver driver = new AndroidDriver(url,desiredCapabilities);*//*
 
-      /*  UiAutomator2Options options = new UiAutomator2Options();
+
+      */
+/*  UiAutomator2Options options = new UiAutomator2Options();
         options.setPlatformName("Android").setDeviceName("Pixel 5").setAutomationName("UIAutomator2").setUdid("emulator-5554")
                 .setNewCommandTimeout(Duration.ofSeconds(30)).setAppPackage("D:\\Github_Projects\\mobile-automation\\src\\main\\resources\\apk-path\\Apk-Info.apk")
                 .setAppActivity(".ApiDemos");
         URL url = new URL("http://0.0.0.0:4723/wd/hub");
-        AppiumDriver driver = new AndroidDriver(url,options);*/
+        AppiumDriver driver = new AndroidDriver(url,options);*//*
+
     }
 }
+*/

@@ -11,13 +11,18 @@ import java.time.Duration;
 
 public class WaitService {
     public AppiumDriver driver;
+    private ElementService elementService;
 //    public WebDriverWait wait;
 
-    public WaitService(AppiumDriver driver) throws MalformedURLException {
-        this.driver = DriverInitialiser.getAndroidDriver();
+   /* public WaitService() throws MalformedURLException {
+        this.driver = ManageWebDriver.getDriver();
+    }*/
+
+    public WaitService(AppiumDriver driver) {
+        this.driver = driver;
     }
 
-    public void visibilityOfElementToTap() {
+    public void visibilityOfElementToTap(String elementType,String elementAttribute) {
         try {
             new WebDriverWait(driver, Duration.ofSeconds(2)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@content-desc='Accessibility']"))).click();
         } catch (Exception e) {
@@ -25,4 +30,11 @@ public class WaitService {
         }
     }
 
+    public void visibilityOfElementToTapByXpath(String elementAttribute) {
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(2)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementAttribute))).click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

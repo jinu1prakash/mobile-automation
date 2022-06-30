@@ -9,6 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class DriverInitialiser {
+
     public static AppiumDriver getAndroidDriver() throws MalformedURLException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
@@ -28,5 +29,6 @@ public class DriverInitialiser {
         System.out.println(driver.getSessionId());
         return driver;
     }
+
 }
 
